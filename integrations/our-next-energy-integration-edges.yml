@@ -1,0 +1,16 @@
+generated: '2026-10-22'
+method: none
+source:
+- https://zapier.com/apps/our-next-energy/integrations
+- https://n8n.io/integrations/our-next-energy/
+- https://composio.dev/toolkits/our-next-energy
+- https://monid.ai/tools/our-next-energy
+checked:
+- https://composio.dev/toolkits/our-next-energy
+- https://monid.ai/tools/our-next-energy
+- https://n8n.io/integrations/our-next-energy/
+- https://zapier.com/apps/our-next-energy/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

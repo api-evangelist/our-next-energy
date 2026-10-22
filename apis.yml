@@ -1,25 +1,76 @@
 aid: our-next-energy
+
 name: Our Next Energy
-description: 'Our Next Energy is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by coatue) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.datocms-assets.com/66155/1698886682-dsf0060_v2.jpg?auto=format&fit=max&w=1200
+
+description: 'Our Next Energy is a US‑based manufacturer of lithium‑ion battery systems for grid storage, rail, defense and industrial applications. The company, backed by Coatue and other investors, builds high‑performance LFP cells and modular energy‑storage solutions, emphasizing fast charging, safety, and sustainability. It operates a manufacturing footprint in Michigan and offers a portfolio of products such as the Aries Grid series, targeting utilities and defense customers.'
+
 url: https://raw.githubusercontent.com/api-evangelist/our-next-energy/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Energy
+- Battery
+- Storage
+- Manufacturing
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+common:
+- type: Support
+  url: https://help.one.ai/support/home?logged_out=true
+- type: Hosts
+  url: hosts/our-next-energy-hosts.yml
+- type: Vendors
+  url: vendors/our-next-energy-vendors.yml
+- type: DomainSecurity
+  url: security/our-next-energy-domain-security.yml
+- type: Website
+  url: https://one.ai
+
+- type: TermsOfService
+  url: https://one.ai/terms-of-service
+- type: PrivacyPolicy
+  url: https://one.ai/privacy-policy
+- type: Documentation
+  url: https://one.ai/company
+- type: Blog
+  url: https://one.ai/news
+
+apis: []
+
 x-backed-by:
 - coatue
-common:
-- type: Website
-  url: https://www.one.ai
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: The provider's website https://one.ai does not expose any OpenAPI, GraphQL, AsyncAPI, gRPC, or WSDL specifications.
+  evidence:
+    - url: https://one.ai/openapi.json
+      status: 404
+  checked: '2026-10-22'
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
